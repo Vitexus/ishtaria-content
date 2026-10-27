@@ -1,3 +1,11 @@
+ishtaria-content (0.2.0) unstable; urgency=medium
+
+  * Character animation asset pipeline: ASSETS.yaml provenance manifest,
+    licence check (CC0-1.0, CC-BY-4.0, CC-BY-SA-4.0, no Mixamo),
+    generated debian/copyright and CI.
+
+ -- Vítězslav Dvořák <cybervitexus@gmail.com>  Tue, 27 Oct 2026 14:23:37 +0100
+
 ishtaria-content (0.1.0) unstable; urgency=medium
 
   * Initial packaging.
