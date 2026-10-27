@@ -4,3 +4,11 @@
 
 override_dh_auto_test:
 	python3 -c "import glob, yaml; [yaml.safe_load(open(f)) for f in glob.glob('core-rules/**/*.yaml', recursive=True)]"
+	python3 tools/check_assets.py
+
+override_dh_install:
+	dh_install
+	for asset in animations/*/*.glb characters/*/*.glb; do \
+		[ -e "$$asset" ] || continue; \
+		install -D -m 0644 "$$asset" "debian/ishtaria-content/usr/share/ishtaria/content/$$asset"; \
+	done

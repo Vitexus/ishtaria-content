@@ -1,0 +1,23 @@
+name: Assets
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  provenance:
+    runs-on: docker
+    container: debian:trixie
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Python and PyYAML
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends python3 python3-yaml
+      - name: Check animation and character provenance
+        run: python3 tools/check_assets.py
+      - name: Check debian/copyright is generated from ASSETS.yaml
+        run: python3 tools/generate_copyright.py --check
+      - name: Run checker tests
+        run: python3 -m unittest discover -s tests -v

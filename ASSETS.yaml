@@ -1,0 +1,15 @@
+# Provenance manifest: one entry per .glb, .fbx or .blend file under animations/, characters/ and src/.
+# Check: python3 tools/check_assets.py    Regenerate debian/copyright: python3 tools/generate_copyright.py
+# Policy: README.md "Animation policy" and CONTRIBUTING.md "How to add an animation".
+#
+# Example entry, uncomment it once the file really exists in the repository:
+#
+# - path: animations/locomotion/walk.glb
+#   source: Quaternius Universal Animation Library 1
+#   url: https://quaternius.com/
+#   author: Quaternius
+#   license: CC0-1.0          # one of CC0-1.0, CC-BY-4.0, CC-BY-SA-4.0
+#   retrieved: YYYY-MM-DD
+#   modified: false           # true after retargeting or editing, then describe it in source
+
+assets: []
