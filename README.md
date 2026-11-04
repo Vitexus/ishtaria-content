@@ -2,6 +2,10 @@
 
 <img src="https://git.vitexsoftware.com/Ishtaria/ishtaria-client/raw/branch/main/assets/branding/emblem.png" alt="Ishtaria" width="96">
 
+<!-- source-notice -->
+> **Primary source:** <https://git.vitexsoftware.com/Ishtaria/ishtaria-content> (development happens there). **GitHub** (<https://github.com/Vitexus/ishtaria-content>) is a secondary mirror; packages and binaries are **not built from GitHub**.
+<!-- /source-notice -->
+
 Base content pack `core-rules`: item kinds, recipes, species and biomes shared by every Ishtaria world. Worlds federate only when they share the major version of this ruleset.
 
 ```
